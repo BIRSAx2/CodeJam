@@ -4,8 +4,6 @@ My solutions to problems in [Google Code Jam](https://code.google.com/codejam/pa
 
 ## Progress
 
-Colons can be used to align columns.
-
 | Year          | Progress           |    
 | ------------- |:-------------      |
 | 2018          | 0                  | 
@@ -13,4 +11,4 @@ Colons can be used to align columns.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
