@@ -21,8 +21,7 @@ def pancake_flipper(S,K,I):
         if S[y]=='-':        
             S=flip(S,y,K)
             times+=1
-    impossible= True if '-' in S else False
-    print(('Case #%d: %s' %(I,'IMPOSSIBLE'if impossible else times)))
+    print(('Case #%d: %s' %(I,'IMPOSSIBLE' if '-' in S else times)))
 
 def pancake_data(input_data):
     
