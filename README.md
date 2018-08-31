@@ -1,6 +1,6 @@
 # Google Code Jam solutions
 
-My solutions to problems in [Google Code Jam](https://code.google.com/codejam/past-contests)
+My python solutions to problems in [Google Code Jam](https://code.google.com/codejam/past-contests)
 
 ## Progress
 
@@ -11,4 +11,4 @@ My solutions to problems in [Google Code Jam](https://code.google.com/codejam/pa
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) file for details
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details

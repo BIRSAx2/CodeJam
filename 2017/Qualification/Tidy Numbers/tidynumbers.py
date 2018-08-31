@@ -7,7 +7,7 @@
 from argparse import ArgumentParser
 import os
 
-def istidynumber(N):
+def prevtidynumber(N):
     #main algorithm
     for i in range(N,0,-1):
         if str(i)==''.join(sorted(list(str(i)))):
@@ -17,7 +17,7 @@ def row_data(input_data):
     
     for T in input_data[1:]:
         N=T[0]
-        prev_n=istidynumber(N)
+        prev_n=prevtidynumber(N)
         print('Case #%d: %s' %(input_data.index(T),prev_n))
 
 def read_input(file_name):
