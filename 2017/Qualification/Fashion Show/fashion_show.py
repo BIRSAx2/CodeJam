@@ -1,3 +1,8 @@
+# Copyright (c) 2018 BIRSAx2. All rights reserved.
+#
+# Google Code Jam 2017 Qualification Round - Problem A. Oversized Pancake Flipper
+# https://code.google.com/codejam/contest/3264486/dashboard#s=p3
+#
 import os
 from argparse import ArgumentParser
 ################# uncomplete

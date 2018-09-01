@@ -2,7 +2,7 @@
 #
 # Google Code Jam 2017 Qualification Round - Problem A. Oversized Pancake Flipper
 # https://code.google.com/codejam/contest/3264486/dashboard#s=p0
-#'
+#
 
 from argparse import ArgumentParser
 import os
