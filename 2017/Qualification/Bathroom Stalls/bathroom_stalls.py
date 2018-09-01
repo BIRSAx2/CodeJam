@@ -97,7 +97,7 @@ def is_valid_file(parser, arg):
 
 def main():
     # reading the command line arguments
-    parser=ArgumentParser(usage='python bathroom-stalls.py -i filename', description='Solution to Google Code Jam 2017 Qualification Round - Problem C. Bathroom Stalls')
+    parser=ArgumentParser(usage='python bathroom_stalls.py -i filename', description='Solution to Google Code Jam 2017 Qualification Round - Problem C. Bathroom Stalls')
     parser.add_argument("-i", dest="file_name", required=True,help="Input file name(with extension)", metavar="filename",
     type=lambda x: is_valid_file(parser, x))
     args=parser.parse_args()                            

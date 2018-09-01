@@ -37,7 +37,8 @@ def is_valid_file(parser, arg):
     
 def main():
     #reading the command line arguments                           
-    parser = ArgumentParser(description="Solution to Google Code Jam 2017 Qualification Round - Problem B. Tidy Numbers", usage=' tidynumbers.py -i filename')
+    parser = ArgumentParser(description="Solution to Google Code Jam 2017 Qualification Round - Problem B. Tidy Numbers", 
+    usage=' tidy_numbers.py -i filename')
     parser.add_argument("-i", dest="file_name", required=True,help="Input file name(with extension)", metavar="filename",
     type=lambda x: is_valid_file(parser, x))
     args=parser.parse_args()                            
