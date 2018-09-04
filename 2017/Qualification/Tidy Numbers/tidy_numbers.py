@@ -14,7 +14,7 @@ def prevtidynumber(N):
             return i
 
 def row_data(input_data):
-    
+    # reads each line data and prints output
     for T in input_data[1:]:
         N=T[0]
         prev_n=prevtidynumber(N)
