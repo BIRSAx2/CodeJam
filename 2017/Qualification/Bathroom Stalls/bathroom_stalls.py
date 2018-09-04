@@ -10,16 +10,16 @@ def bathroom_stalls(N,K):
 
     #Explanation of the algorithm used:
 
-    # This algorithm works on consecutive segments of empty segments.
+    # This algorithm works on consecutive segments of empty stalls.
     # The data supplied to us are:
     # N: the number of segments
-    # K: people are about to enter the bathroom, or better the number of segments that will be occupied
+    # K: people are about to enter the bathroom, or better the number of stalls that will be occupied
 
-    # The algorithm finds consecutive segments segments after each person has occupied a stall:
+    # The algorithm finds consecutive segments after each person has occupied a stall:
     # The data will be included in a list, and updated at each processing
     # 1. The number of empty segments is N        list = [N]
-    # 2. One person will occupy 1 stall, so the number of empty segments will be N-1
-    # 3. These empty segments will be divided into two segments of consecutive empty segments, 
+    # 2. One person will occupy 1 stall, so the number of empty stalls will be N-1
+    # 3. These empty stalls will be divided into two segments of consecutive empty stalls, 
     #     first_segment and second_segment
     #     If N-1 is even then the two segments will be equal length: 
     #     first_segment = second_segment = (N-1) / 2
@@ -28,7 +28,7 @@ def bathroom_stalls(N,K):
     #     first_segment = (N + 1) / 2 
     #     second_segment = first_segment-1
     #     These two values ​​will replace N in the list   list = [first_segment, second_segment]
-    # 4. The next person will choose the major segment
+    # 4. The next person will choose the largest segment
     # 5. Return to point 1
 
     # Numerical example:
@@ -38,22 +38,24 @@ def bathroom_stalls(N,K):
     # First client
 
     # segments = [4]
-    # The length of the largest segment of segments is 4
+    # The length of the largest segment of empty stalls is 4
     # 4-1 is odd then:
-    # first_segment = (N + 1) / 2
+    # X=4-1
+    # first_segment = (X + 1) / 2
     # second_segment = first_segment-1
     # segments = [2, 1]
 
     # Second client:
 
-    # segments = [2,1] (the order of the blanks does not matter, the maximum will always be chosen)
-    # max (segments) = 2
+    # segments = [2,1] (the order of segments does not matter, the largest segment will always be chosen)
+    # The length of the largest segment of empty stalls is 2
     # 2-1 is odd then:
-    # first_segment = (N + 1) / 2
+    # X=2-1
+    # first_segment = (X + 1) / 2
     # second_segment = first_segment-1
     # segments = [1, 0, 1]
 
-    # The output consists of the last first_segment and second_segment found
+    # The output consists of the lastest  couple of first_segment and second_segment found
     # Final result : 1 0
 
     clients=0
