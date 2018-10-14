@@ -55,11 +55,11 @@ def bathroom_stalls(N,K):
     # second_segment = first_segment-1
     # segments = [1, 0, 1]
 
-    # The output consists of the lastest  couple of first_segment and second_segment found
+    # The output consists of the latest  couple of first_segment and second_segment found
     # Final result : 1 0
 
     clients=0
-    segments=[N] #empty segments
+    segments=[N] # empty segments
     last=()
     while clients<K:
         clients+=1
@@ -108,4 +108,3 @@ def main():
 
 if __name__ == '__main__':
     main()
-    
